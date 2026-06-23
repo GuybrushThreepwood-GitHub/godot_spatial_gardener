@@ -291,7 +291,8 @@ func on_replace_dialog_custom_action(action: String, file_path: String, is_impor
 
 
 func on_req_import_export_file_confirmed(file_path: String, is_import: bool, is_plant_data: bool, replace_data: bool, plant_idx: int = -1):
-	_replace_dialog.hide()
+	if _replace_dialog:	
+		_replace_dialog.hide()
 	if is_import:
 		if is_plant_data:
 			req_import_plant_data.emit(file_path, plant_idx, replace_data)
