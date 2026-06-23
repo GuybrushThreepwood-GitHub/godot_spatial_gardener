@@ -78,8 +78,8 @@ static func adapt_theme(theme:Theme) -> Theme:
 	# MultiRangePropLabel -> Label
 	var MultiRangePropLabel_stylebox_panel := PanelContainer_stylebox_panel.duplicate(true)
 #	var MultiRangePropLabel_stylebox_panel := LineEdit_stylebox_normal.duplicate(true)
-	MultiRangePropLabel_stylebox_panel.bg_color = dark_color_3
-	MultiRangePropLabel_stylebox_panel.draw_center = true
+	#MultiRangePropLabel_stylebox_panel.bg_color = dark_color_3
+	#MultiRangePropLabel_stylebox_panel.draw_center = true
 	editor_theme.set_theme_item(Theme.DATA_TYPE_STYLEBOX, "normal", "MultiRangePropLabel", MultiRangePropLabel_stylebox_panel)
 	editor_theme.set_type_variation("MultiRangePropLabel", "Label")
 
@@ -98,7 +98,7 @@ static func adapt_theme(theme:Theme) -> Theme:
 	
 	# InspectorPanelContainer -> PanelContainer
 	var InspectorPanelContainer_stylebox := Tree_panel.duplicate(true)
-	InspectorPanelContainer_stylebox.draw_center = true
+	#InspectorPanelContainer_stylebox.draw_center = true
 	editor_theme.set_theme_item(Theme.DATA_TYPE_STYLEBOX, "panel", "InspectorPanelContainer", InspectorPanelContainer_stylebox)
 	editor_theme.set_type_variation("InspectorPanelContainer", "PanelContainer")
 	
@@ -112,9 +112,9 @@ static func adapt_theme(theme:Theme) -> Theme:
 	
 	# InspectorInnerPanelContainer -> PanelContainer
 	var InspectorInnerPanelContainer_stylebox := PanelContainer_stylebox_panel.duplicate(true)
-	InspectorInnerPanelContainer_stylebox.draw_center = false
-	InspectorInnerPanelContainer_stylebox.set_border_width_all(1)
-	InspectorInnerPanelContainer_stylebox.border_color = dark_color_3
+	#InspectorInnerPanelContainer_stylebox.draw_center = false
+	#InspectorInnerPanelContainer_stylebox.set_border_width_all(1)
+	#InspectorInnerPanelContainer_stylebox.border_color = dark_color_3
 	editor_theme.set_theme_item(Theme.DATA_TYPE_STYLEBOX, "panel", "InspectorInnerPanelContainer", InspectorInnerPanelContainer_stylebox)
 	editor_theme.set_theme_item(Theme.DATA_TYPE_FONT, "panel", "InspectorInnerPanelContainer", InspectorInnerPanelContainer_stylebox)
 	editor_theme.set_type_variation("InspectorInnerPanelContainer", "PanelContainer")
@@ -150,7 +150,7 @@ static func adapt_theme(theme:Theme) -> Theme:
 	
 	# PropertySubsection -> PanelContainer
 	var PropertySubsection_stylebox := PanelContainer_stylebox_panel.duplicate(true)
-	PropertySubsection_stylebox.draw_center = true
+	#PropertySubsection_stylebox.draw_center = true
 	editor_theme.set_theme_item(Theme.DATA_TYPE_STYLEBOX, "panel", "PropertySubsection", PropertySubsection_stylebox)
 	editor_theme.set_theme_item(Theme.DATA_TYPE_STYLEBOX, "normal", "PropertySubsection", PropertySubsection_stylebox)
 	editor_theme.set_theme_item(Theme.DATA_TYPE_STYLEBOX, "hover", "PropertySubsection", PropertySubsection_stylebox)
